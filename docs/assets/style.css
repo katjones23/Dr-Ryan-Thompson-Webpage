@@ -93,3 +93,14 @@ body, html {
 .cardTextCss {
   text-align: center;
 }
+
+.contact {
+  padding-bottom: 100px;
+}
+
+footer {
+  background-color: #444444;
+  text-align: center;
+  color: #eeeeee;
+  padding: 50px;
+}
