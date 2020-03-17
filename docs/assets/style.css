@@ -34,7 +34,10 @@ body, html {
 }
 
 /* about section */
-.aboutHeader {
+.aboutHeader,
+.educationHeader,
+.researchHeader
+ {
   padding-top: 50px;
   text-align: center;
 }
@@ -45,13 +48,15 @@ body, html {
 }
 
 .about,
-.education  {
+.education,
+.research  {
   padding: 10px;
   width: 100%;
   text-align: center;
   font-size: 16px;
 }
 
-.educationHeader {
-  padding-top: 50px;
+.empty-section img {
+  width: 100%;
+  height: 200px;
 }
