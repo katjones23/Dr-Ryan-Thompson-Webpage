@@ -98,7 +98,8 @@ body, html {
   text-align: center;
 }
 
-.contact {
+.contact,
+.randomMathFact {
   padding-bottom: 100px;
 }
 

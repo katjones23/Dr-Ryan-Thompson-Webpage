@@ -11,5 +11,6 @@ This project is a webpage portfolio for Dr. Ryan Thompson.
 [W3 Schools](http://w3schools.com/) for code for the hero image and 'top' button.
 [Kelly Lacy on Pexels](https://www.pexels.com/@kelly-lacy-1179532) for hero image.
 [Ian Panelo on Pexels](https://www.pexels.com/@ian-panelo) for divider image.
-[Font Awesome](https://fontawesome.com/) for thhe LinkedIn icon.
+[Font Awesome](https://fontawesome.com/) for the LinkedIn icon.
+[Numbers API](http://numbersapi.com/) for random math facts.
 
