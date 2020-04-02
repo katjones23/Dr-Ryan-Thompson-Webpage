@@ -21,7 +21,7 @@ function topFunction() {
 // Math random fact API from http://numbersapi.com/
 // AJAX
 $.ajax({
-  url: 'http://numbersapi.com/random/math?notfound=floor'
+  url: 'https://cors-anywhere.herokuapp.com/http://numbersapi.com/random/math?notfound=floor'
 })
   .then(function (data) {
     $(".randomMathFact").text(data);
