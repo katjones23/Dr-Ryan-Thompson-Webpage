@@ -1,36 +1,57 @@
-//Get the button:
-var topButton = document.getElementById("topBtn");
+$(document).ready(function () {
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+  // smooth scroll, https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1
+  $(".nav-link").on('click', function (event) {
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topButton.style.display = "block";
-  } else {
-    topButton.style.display = "none";
-  }
-}
+    if (this.hash !== "") {
+      event.preventDefault();
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+      // Store hash
+      var hash = this.hash;
 
-// Math random fact API from http://numbersapi.com/
-// AJAX
-$.ajax({
-  url: 'https://cors-anywhere.herokuapp.com/http://numbersapi.com/random/math?notfound=floor'
-})
-  .then(function (data) {
-    $(".randomMathFact").text(data);
-  })
-  .catch(function (error) {
-    $(".randomMathFact").hide();
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function () {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
   });
 
+  //Get the button:
+  var topButton = $("#topBtn");
 
-var copyrightYear = document.getElementById("copyright")
+  // When the user scrolls down 20px from the top of the document, show the button
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 20) {
+      topButton.css("display", "block")
+    } else {
+      topButton.css("display", "none")
+    };
+  });
 
-copyrightYear.appendChild(document.createTextNode(new Date().getFullYear()))
+  $(topButton).on("click", function (event) {
+      event.preventDefault();
+
+      $("html, body").animate({
+        scrollTop: 0
+      }, 400);
+    });
+
+  // Math random fact API from http://numbersapi.com/
+  // AJAX
+  $.ajax({
+    url: 'https://cors-anywhere.herokuapp.com/http://numbersapi.com/random/math?notfound=floor'
+  })
+    .then(function (data) {
+      $(".randomMathFact").text(data);
+    })
+    .catch(function (error) {
+      $(".randomMathFact").hide();
+    });
+
+
+    $("#copyrightYear").text("© " + (new Date).getFullYear());
+
+});
