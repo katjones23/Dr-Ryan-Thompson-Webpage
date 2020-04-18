@@ -126,6 +126,10 @@ footer {
   .educationHeader,
   .researchHeader,
   .contactHeader {
-  padding-top: 100px;
+    padding-top: 200px;
 }
+
+  .navbar {
+    padding-top: 30px;
+  }
 }
