@@ -23,7 +23,7 @@ $(document).ready(function () {
   var topButton = $("#topBtn");
 
   // When the user scrolls down 20px from the top of the document, show the button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() > 20) {
       topButton.css("display", "block")
     } else {
@@ -32,12 +32,12 @@ $(document).ready(function () {
   });
 
   $(topButton).on("click", function (event) {
-      event.preventDefault();
+    event.preventDefault();
 
-      $("html, body").animate({
-        scrollTop: 0
-      }, 400);
-    });
+    $("html, body").animate({
+      scrollTop: 0
+    }, 400);
+  });
 
   // Math random fact API from http://numbersapi.com/
   // AJAX
@@ -52,6 +52,5 @@ $(document).ready(function () {
     });
 
 
-    $("#copyrightYear").text("© " + (new Date).getFullYear());
-
+  $("#copyrightYear").text("© " + (new Date).getFullYear());
 });

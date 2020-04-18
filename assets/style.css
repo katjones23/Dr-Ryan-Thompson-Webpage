@@ -54,7 +54,6 @@ body, html {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-/* about section */
 .aboutHeader,
 .educationHeader,
 .researchHeader,
@@ -122,4 +121,11 @@ footer {
     padding-right: 20px;
     padding-left: 20px;
   }
+
+  .aboutHeader,
+  .educationHeader,
+  .researchHeader,
+  .contactHeader {
+  padding-top: 100px;
+}
 }
