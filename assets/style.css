@@ -57,6 +57,7 @@ body, html {
 .aboutHeader,
 .educationHeader,
 .researchHeader,
+#cvHeader,
 .contactHeader {
   padding-top: 50px;
   text-align: center;
@@ -125,6 +126,7 @@ footer {
   .aboutHeader,
   .educationHeader,
   .researchHeader,
+  #cvHeader,
   .contactHeader {
     padding-top: 200px;
 }
